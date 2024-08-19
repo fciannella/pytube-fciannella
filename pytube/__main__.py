@@ -241,7 +241,7 @@ class YouTube:
         if self._vid_info:
             return self._vid_info
 
-        innertube = InnerTube(client='TV_EMBED', use_oauth=self.use_oauth, allow_cache=self.allow_oauth_cache)
+        innertube = InnerTube(client='ANDROID_EMBED', use_oauth=self.use_oauth, allow_cache=self.allow_oauth_cache)
 
         innertube_response = innertube.player(self.video_id)
         self._vid_info = innertube_response
